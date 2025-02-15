@@ -1,6 +1,8 @@
 # Analyze the sales data to identify pattern, trends, and factor affecting sales
 
 import pandas as pd  
+import matplotlib as plt
+import seaborn as sns
 
 # Define the file path  
 file_path = r"C:\Users\E VELLAY\.cache\kagglehub\datasets\kyanyoga\sample-sales-data\versions\1\sales_data_sample.csv"
@@ -33,7 +35,6 @@ print(monthly_sales)
 
 # Plot Sales Trends 
 # Create the graph of Monthly sales Trends and total Sales
-import matplotlib.pyplot as plt
 monthly_sales.plot(kind= 'line', title= 'Monthly Sales Trend', figsize = (20,10))
 plt.xlabel("Month")
 plt.ylabel("Total Sales")
@@ -56,7 +57,6 @@ plt.show()
 
 # Third
 # Factor Affecting Sales
-import seaborn as sns
 sns.scatterplot(x=df['PRICEEACH'], y=df['SALES'])
 
 # Show the Graph
