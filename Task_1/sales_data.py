@@ -1,7 +1,7 @@
 # Analyze the sales data to identify pattern, trends, and factor affecting sales
 
 import pandas as pd  
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Define the file path  
@@ -37,7 +37,7 @@ print(monthly_sales)
 # Plot Sales Trends 
 # Create a Plot bar chart
 monthly_sales.plot(kind= 'line', marker= 'o', color= 'b')
-plt.figure(figsize =(20,10))
+plt.figure(figsize =(25,12))
 plt.title("Monthly Sales Trend")
 plt.xlabel("Month")
 plt.ylabel("Total Sales")
@@ -52,7 +52,7 @@ top_product = df.groupby('PRODUCTLINE')['SALES'].sum().sort_values(ascending= Fa
 print(top_product)
 
 # Create a Plot bar chart
-plt.figure(figsize= (20,10))
+plt.figure(figsize= (25,12))
 top_product.plot(kind= 'bar', color= 'g')
 plt.title("Top Selling Product")
 plt.xlabel("Product Line")
@@ -66,7 +66,7 @@ plt.show()
 top_countries = df.groupby('COUNTRY')['SALES'].sum().sort_values(ascending=False)
 
 # Create a Plot bar chart  
-plt.figure(figsize=(20,10))  
+plt.figure(figsize=(25,12))  
 top_countries.plot(kind='bar', color='orange')  
 plt.title("Sales by Country")  
 plt.xlabel("Country")  
