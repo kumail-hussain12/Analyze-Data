@@ -37,7 +37,7 @@ print(monthly_sales)
 # Plot Sales Trends 
 # Create a Plot bar chart
 monthly_sales.plot(kind= 'line', marker= 'o', color= 'b')
-plt.figure(figsize =(25,12))
+plt.figure(figsize =(20,10))
 plt.title("Monthly Sales Trend")
 plt.xlabel("Month")
 plt.ylabel("Total Sales")
@@ -52,7 +52,7 @@ top_product = df.groupby('PRODUCTLINE')['SALES'].sum().sort_values(ascending= Fa
 print(top_product)
 
 # Create a Plot bar chart
-plt.figure(figsize= (25,12))
+plt.figure(figsize= (20,10))
 top_product.plot(kind= 'bar', color= 'g')
 plt.title("Top Selling Product")
 plt.xlabel("Product Line")
@@ -66,7 +66,7 @@ plt.show()
 top_countries = df.groupby('COUNTRY')['SALES'].sum().sort_values(ascending=False)
 
 # Create a Plot bar chart  
-plt.figure(figsize=(25,12))  
+plt.figure(figsize=(20,10))  
 top_countries.plot(kind='bar', color='orange')  
 plt.title("Sales by Country")  
 plt.xlabel("Country")  
@@ -78,7 +78,7 @@ plt.show()
 #---------------------------------------------------------------------------------------------
 
 # Factor Affecting Sales
-plt.figure(figsize=(12,8) )
+plt.figure(figsize=(10,6) )
 sns.scatterplot(x=df['PRICEEACH'], y=df['SALES'], alpha= 0.5)
 
 # Show the Graph
