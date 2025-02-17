@@ -1,3 +1,6 @@
+# 1) Analyze crime data to identify patterns and factors influencing crime rates.
+# 2) Create visualizations and suggest strategies for crime prevention.
+
 # Step1: Load the datasets
 import pandas as pd
 filepath = "uscrime.csv"

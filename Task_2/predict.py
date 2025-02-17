@@ -1,3 +1,6 @@
+# 1) Analyze crime data to identify patterns and factors influencing crime rates.
+# 2) Create visualizations and suggest strategies for crime prevention.
+
 # Predict Crime rate using a machine learning model(Linear Regression)
 import pandas as pd
 import numpy as np
