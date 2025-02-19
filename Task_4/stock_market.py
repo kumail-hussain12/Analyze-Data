@@ -74,8 +74,7 @@ st.write("RSI Analysis")
 st.line_chart(data['RSI'])
 
 #-----------------------------------------------------------------------------------------------
-# streamlit run "c:\Users\E VELLAY\OneDrive\Desktop\Analyze Data\Task_4\stock_market.py" run this 
-# in commond line 
+
 
 
 
