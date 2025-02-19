@@ -3,6 +3,7 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import streamlit as st
 
 def get_stock_data(ticker, start, end):
     stock = yf.download(ticker, start=start, end=end, period= "1y")
@@ -57,7 +58,6 @@ print(data[['Close', 'SMA_50', 'SMA_200', 'RSI']].tail(15))
 #---------------------------------------------------------------------------
 
 #Step4: Create a dashboard using Streamlit or Dash.
-import streamlit as st
 
 st.title("Stock Price Analysis")
 
